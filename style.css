@@ -1,0 +1,99 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+
+body{
+    background: rgba(187, 104, 235, 0.838);
+    background: linear-gradient(90deg, rgb(180, 92, 231) 7%, rgb(214, 61, 238) 76%, rgb(215, 176, 122) 95%);
+    color: aliceblue;
+
+}
+
+main{
+    width: 730px;
+    margin:  10px 0 0 15rem; 
+    display: flex;
+    align-items: center;
+
+}
+
+.s1{
+    background-color: rgba(110, 203, 140, 0.612);
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+}
+.s2 > *{
+    margin: 10px;
+}
+.s2 {
+    background-color: rgba(165, 42, 42, 0.625);
+    height: 300px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px 20px;
+    display: flex; /* Establece el contenedor como un flex container */
+    flex-direction: column; /* Para centrar verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+h1{
+    text-align: center;
+}
+
+
+
+.arranco{
+    background-color: red;
+    text-align: center;
+}
+
+.boton-seleccionado{
+    background-color: red;
+    cursor: pointer;
+    background-image: url('imagenes/cyclops.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra el botón */
+    background-repeat: no-repeat;
+}
+
+.estadisticas{
+    border: 1px solid white;
+    height: 105px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: black;
+    width: 100%;
+}
+footer{
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+}
+.boton{
+    color: antiquewhite;
+    height: 200px;
+    width: 240px;
+    font-size: 40px;
+    color:  black;
+}
+
+#time{
+    display: grid;
+    grid-template-columns:  2fr 1fr; /* Dos columnas de igual ancho */
+    gap: 10px; /* Espacio entre los elementos */
+    height: 30px;
+}
+
+#comenzar{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 40px;
+   font-size: 2rem;
+    align-items: center;
+    background-color: aqua;
+}
+
