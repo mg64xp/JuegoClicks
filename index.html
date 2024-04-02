@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div id="inicio">
+        <div>
+            <button id="ocultar" onclick="ocultar()">X</button>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quibusdam iusto aliquam! Illo iste
+                    delectus voluptas quisquam, saepe dolore amet explicabo exercitationem esse repudiandae alias
+                    voluptatem corrupti, ea praesentium. Consequatur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione impedit fugiat architecto,
+                    atque modi deleniti, voluptates maxime quae quisquam quo, harum eaque voluptas magni fuga veritatis
+                    cumque illum obcaecati.</p>
+                <p>Lorem.</p>
+                <p>Lorem, ipsum.</p>
+
+            </div>
+        </div>
+    </div>
     <main>
         <section class="s1">
             <h1>Juego de rapidez</h1>
             <table>
                 <tr>
-                    <td><button id="1" onclick ="darColor(1) " class="boton "></button></td>
-                    <td><button id="2" onclick ="darColor(2) " class="boton "></button></td>
-                    <td><button id="3" onclick ="darColor(3) " class="boton "></button></td>
-                    <td><button id="4" onclick ="darColor(4)" class="boton "></button></td>
+                    <td><button id="1" onclick="darColor(1) " class="boton "></button></td>
+                    <td><button id="2" onclick="darColor(2) " class="boton "></button></td>
+                    <td><button id="3" onclick="darColor(3) " class="boton "></button></td>
+                    <td><button id="4" onclick="darColor(4)" class="boton "></button></td>
                 </tr>
                 <tr>
-                    <td><button id="5" onclick ="darColor(5)" class="boton "></button></td>
-                    <td><button id="6" onclick ="darColor(6)" class="boton "></button></td>
-                    <td><button id="7" onclick ="darColor(7)" class="boton "></button></td>
-                    <td><button id="8" onclick ="darColor(8)" class="boton "></button></td>
+                    <td><button id="5" onclick="darColor(5)" class="boton "></button></td>
+                    <td><button id="6" onclick="darColor(6)" class="boton "></button></td>
+                    <td><button id="7" onclick="darColor(7)" class="boton "></button></td>
+                    <td><button id="8" onclick="darColor(8)" class="boton "></button></td>
                 </tr>
                 <tr>
-                    <td><button id="9" onclick ="darColor(9)" class="boton boton-seleccionado"></button></td>
-                    <td><button id="10" onclick ="darColor(10)"  class="boton "></button></td>
-                    <td><button id="11" onclick ="darColor(11)"  class="boton "></button></td>
-                    <td><button id="12" onclick ="darColor(12)"  class="boton "></button></td>
+                    <td><button id="9" onclick="darColor(9)" class="boton"></button></td>
+                    <td><button id="10" onclick="darColor(10)" class="boton "></button></td>
+                    <td><button id="11" onclick="darColor(11)" class="boton "></button></td>
+                    <td><button id="12" onclick="darColor(12)" class="boton "></button></td>
                 </tr>
                 <tr>
-                    <td><button id="13" onclick ="darColor(13)"  class="boton "></button></td>
-                    <td><button id="14" onclick ="darColor(14)"  class="boton "></button></td>
-                    <td><button id="15" onclick ="darColor(15)"  class="boton "></button></td>
-                    <td><button id="16" onclick ="darColor(16)"  class="boton "></button></td>
+                    <td><button id="13" onclick="darColor(13)" class="boton "></button></td>
+                    <td><button id="14" onclick="darColor(14)" class="boton "></button></td>
+                    <td><button id="15" onclick="darColor(15)" class="boton "></button></td>
+                    <td><button id="16" onclick="darColor(16)" class="boton "></button></td>
                 </tr>
             </table>
         </section>
         <section class="s2">
             <div id="time">
-                <input type="number"  id="cronometro" placeholder="Ingresa un numero">
+                <input type="number" id="cronometro" placeholder="Ingresa un numero">
                 <button type="button" value="enviar" id="guardarTiempo" onclick="guardar()">Guardar</button>
             </div>
-            <button  id="comenzar" disabled >Comenzar</button>
-             
+            <button id="comenzar" disabled>Comenzar</button>
+
             <h2 id="tiempo" class=" arranco">Indica el tiempo que quieres jugar</h2>
             <h2 id="clicks" class="estadisticas">clicks: 0</h2>
         </section>
@@ -53,4 +71,5 @@
     </footer>
     <script src="index.js"></script>
 </body>
+
 </html>
